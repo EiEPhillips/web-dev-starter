@@ -1,10 +1,21 @@
-let userInput = document.getElementById('userInput').value;
-let getData = document.getElementById('getInput').innerHTML;
-userInput.keyup = function () {
-    let changeFirstLetter = userInput.replace(userInput.charAt(0), userInput.charAt(0).toUpperCase());
-    getData = changeFirstLetter;
-    if(userInput > 5){
-        let isSlug = changeFirstLetter.replace(" ", "-");
-        getData = isSlug;
-    }
+const displayField = document.getElementById("display");
+const displayText = (field) => {
+    function titleCase(str) {
+        str = str.toLowerCase().split(' ');
+        for (var i = 0; i < str.length; i++) {
+          str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+        }
+        return str.join(' ');
+      }
+  displayField.innerText = titleCase(field.value);
+};
+
+let displayField1 = document.getElementById("displays");
+// const userInput = document.getElementById("test");
+let displayTexter = (field) => {
+  //displayField1.innerText = field.value;
+  if(displayField1 > 5){
+    let isSlug = displayTexter.replace(" ", "-");
+    displayField1.innerText = isSlug;
+}
 };

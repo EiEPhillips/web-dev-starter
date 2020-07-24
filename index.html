@@ -10,11 +10,17 @@
 </head>
 
 <body>
-  <form method="get" action=""> 
-    <input type="text" id="userInput">
-    <label id="getInput"></label>
-  </form>
+  <h3>Your input here becomes titlecase</h3>
+  <input id="test" type="text" oninput="displayText(this)">
+  <p id="display"> </p>
 
+  <br />
+  <br />
+  <br />
+
+  <h3>Your input here becomes a slug</h3>
+  <input id="test1" type="text" oninput="displayTexter(this)">
+  <p id="displays"> </p>
 
 <script src="script.js"></script>
 </body>
