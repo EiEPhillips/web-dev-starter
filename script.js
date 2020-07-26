@@ -12,6 +12,4 @@ const displayText = (field) => {
 
 
 
-function slugify(displays){
 
-};
