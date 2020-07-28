@@ -11,5 +11,3 @@ const displayText = (field) => {
 };
 
 
-
-
